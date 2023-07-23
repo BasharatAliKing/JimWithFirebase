@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Jim</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balthazar&display=swap" rel="stylesheet">
+<style>
+    /* css Reset */
+    body{
+        font-family: 'Balthazar', serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img.jpg);
+    }
+    .left{
+        display: inline-block;
+       /* border: 2px solid red;*/
+        position: absolute;
+        left: 34px;
+        top: 10px;
+        height: 10px;
+        font-family: 'Balthazar', serif;
+        
+}
+.left img{
+    width: 140px; 
+}
+.left div{
+    text-align: center;
+}
+
+
+.mid{
+   /* border: 2px solid green;*/
+    display: block;
+    margin: 25px auto;
+    width: 40%;
+   
+    }
+    .right{
+        display: inline-block;
+       /* border: 2px solid yellow;*/
+        position: absolute;
+        right: 34px;
+        top: 33px;
+    }
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 16px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: gray;
+}
+
+.btn{
+    font-family: 'Balthazar', serif;
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}   
+.btn:hover{
+    background-color: gray;
+}
+   .container{
+    border: 2px solid white;
+    margin: 106px 80px ;
+    padding: 50px;
+    width: 30%;
+    border-radius: 15px;
+   }
+    input{
+    font-family: 'Balthazar', serif;
+   text-align: center;
+   display: block;
+   width: 400px;
+   padding: 3px;
+   border: 2px solid black;
+   margin: 0px auto;
+   font-size: 20px;
+   border-radius: 8px;
+   }
+   .container h2{
+    text-align: center;
+   }
+   .container .btn{
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+   }
+   span{
+    color: red;
+   }
+  
+   
+</style>
+<body>
+  <header class="header"> 
+    <!--Lift box for logo -->
+   <div class="left">
+    <img src="logo.jpg" alt="">
+   </div>   
+    </div>
+       <!--mid box for navbar  -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitnesd Calculator</a></li>
+            <li><a href="#" >Contact Us</a></li>
+        </ul> 
+      
+    </div>
+       <!--Right box for buttons -->
+        <div class="right">
+       <button class="btn">Call Us Now</button>
+       <button class="btn">Email Us</button>
+        </div>
+  
+  </header>
+
+  <div class="container">
+   <h2>Join the best gym of Lahore now</h2>
+   <form class="add">
+        <input type="text" name="name" placeholder="Enter your name"><br>
+        <input type="text" name="age" placeholder="Enter Your age"><br>
+        <input type="text" name="gender" placeholder="Enter your Gender"><br>
+        <input type="text" name="locailty" placeholder="Enter your Locailty">
+        <input type="submit" value="Submit"class="btn">
+   </form>
+  </div>
+    <script src="./bundle.js"></script>
+</body>
+</html>
